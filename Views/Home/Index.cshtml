@@ -3,38 +3,121 @@
 }
 
 <div class="hero-section">
-    <h1>ELocal</h1>
-    <p>Tu App de Eventos por Todo el País</p>
-      
-    <div class="stats">
-        <div>
+    <h1>Bienvenido a ELocal</h1>
+    <p>Descubre los mejores eventos en toda la República Dominicana</p>
+
+    <div class="stats-container">
+        <div class="stat-item">
             <h2>31</h2>
             <p>Provincias</p>
         </div>
-        <div>
+        <div class="stat-item">
             <h2>200+</h2>
             <p>Viajeros Felices</p>
         </div>
-        <div>
+        <div class="stat-item">
             <h2>100+</h2>
-            <p>Nuevas amistades</p>
+            <p>Nuevas Amistades</p>
         </div>
     </div>
 
+    <button class="cta-button" onclick="location.href='@Url.Action("UpcomingDestinations", "Home")'">Empieza a ver próximos destinos</button>
 
-    
-    <button onclick="location.href='@Url.Action("BuyTicket", "Home")'">Buy Ticket</button>
-
-   <div class="stats">
-  <table class="description-table">
-        <tr>
-            <td class=""><img src="https://zcube.in/eventes/img/calendar.png" alt="Study Icon"></td>
-            <td class="text1">Study in a newly-refreshed campus located in the heart of Berlin, Europe's start-up capital. Berlin is a fantastic place to study as there are numerous opportunities for students and professionals alike.</td>
-        </tr>
-        <tr>
-            <td class=""><img src="https://zcube.in/eventes/img/comments.png" alt="Chat Icon"></td>
-            <td class="text1">Engage with top professionals and gain insights into the digital business at Berlin.</td>
-        </tr>
-    </table>
-   </div>
+    <div class="description-section">
+        <div class="description-item">
+            <img src="https://zcube.in/eventes/img/calendar.png" alt="Calendario Icono">
+            <p>Explora eventos únicos en la República Dominicana, desde ferias culturales hasta conciertos vibrantes en las mejores ubicaciones del país.</p>
+        </div>
+        <div class="description-item">
+            <img src="https://zcube.in/eventes/img/comments.png" alt="Comentarios Icono">
+            <p>Conéctate con personas que comparten tus intereses y descubre nuevos lugares en cada evento al que asistas.</p>
+        </div>
+    </div>
 </div>
+
+<style>
+    .hero-section {
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(to right, #007bff, #00aaff);
+        color: white;
+    }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+    .stats-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+
+    .stat-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 150px;
+    }
+
+        .stat-item h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .stat-item p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+    .cta-button {
+        background-color: #ffffff;
+        color: #007bff;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 40px;
+    }
+
+        .cta-button:hover {
+            background-color: #f1f1f1;
+        }
+
+    .description-section {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .description-item {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 45%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+        .description-item img {
+            width: 50px;
+        }
+
+        .description-item p {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+        }
+</style>

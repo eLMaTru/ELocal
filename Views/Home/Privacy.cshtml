@@ -1,6 +1,93 @@
-﻿@{
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
     ViewData["Title"] = "Privacy Policy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<h2>Política de Privacidad</h2>
+
+<div class="privacy-container">
+    <p>
+        En <strong>Elocal</strong>, respetamos tu privacidad y estamos comprometidos a proteger la información personal que compartes con nosotros. Este documento describe cómo recopilamos, utilizamos y protegemos tu información personal.
+    </p>
+
+    <h3>1. Información que Recopilamos</h3>
+    <p>
+        Cuando usas nuestra aplicación, podemos recopilar la siguiente información:
+    </p>
+    <ul>
+        <li><strong>Información Personal:</strong> como tu nombre, dirección de correo electrónico, y otros datos de contacto cuando te registras o usas nuestra aplicación.</li>
+        <li><strong>Información de Uso:</strong> detalles sobre cómo usas la aplicación, incluyendo tu interacción con eventos, tus preferencias, y los tiempos de uso.</li>
+        <li><strong>Información de Dispositivo:</strong> datos sobre el dispositivo que utilizas para acceder a la aplicación, como el tipo de dispositivo, el sistema operativo, y la dirección IP.</li>
+    </ul>
+
+    <h3>2. Uso de la Información</h3>
+    <p>
+        La información que recopilamos se utiliza para:
+    </p>
+    <ul>
+        <li>Proporcionar y mejorar nuestros servicios.</li>
+        <li>Personalizar tu experiencia en la aplicación.</li>
+        <li>Comunicarnos contigo sobre actualizaciones, eventos, y promociones.</li>
+        <li>Analizar el uso de la aplicación para mejorar nuestras funcionalidades y servicios.</li>
+    </ul>
+
+    <h3>3. Compartición de Información</h3>
+    <p>
+        No compartimos tu información personal con terceros, excepto en las siguientes circunstancias:
+    </p>
+    <ul>
+        <li>Con tu consentimiento explícito.</li>
+        <li>Cuando sea necesario para cumplir con obligaciones legales o proteger nuestros derechos legales.</li>
+        <li>Con proveedores de servicios que nos ayudan a operar nuestra aplicación, quienes están obligados a proteger tu información.</li>
+    </ul>
+
+    <h3>4. Seguridad de la Información</h3>
+    <p>
+        Tomamos medidas razonables para proteger la información personal que recopilamos de acceso no autorizado, uso o divulgación. Sin embargo, debes tener en cuenta que ninguna transmisión de datos a través de Internet o sistema de almacenamiento es completamente segura.
+    </p>
+
+    <h3>5. Tus Derechos</h3>
+    <p>
+        Tienes derecho a acceder, corregir o eliminar tu información personal. Si deseas ejercer estos derechos, por favor contáctanos a través de la información proporcionada en la aplicación.
+    </p>
+
+    <h3>6. Cambios en esta Política</h3>
+    <p>
+        Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Te notificaremos sobre cualquier cambio publicando la nueva política en nuestra aplicación. Te recomendamos revisar esta política periódicamente para estar informado sobre cómo protegemos tu información.
+    </p>
+
+    <h3>7. Contacto</h3>
+    <p>
+        Si tienes alguna pregunta o inquietud sobre esta política de privacidad, no dudes en contactarnos a través de los canales de soporte en la aplicación.
+    </p>
+</div>
+
+<style>
+    .privacy-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
+    }
+
+        .privacy-container p, .privacy-container ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .privacy-container h3 {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .privacy-container strong {
+            color: #007bff;
+        }
+</style>
