@@ -1,0 +1,141 @@
+﻿@model Event
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="event-details-container">
+    <div class="event-header">
+        <h1>@Model.Name</h1>
+        <p>Fecha: @Model.Date.ToString("dd de MMMM, yyyy")</p>
+        <p>Ubicación: @Model.Location</p>
+    </div>
+
+    <div class="event-image">
+        <img src="@Model.ImageUrl" alt="@Model.Name">
+    </div>
+
+    <div class="event-description">
+        <h2>Descripción del Evento</h2>
+        <p>
+            @Model.Description
+        </p>
+    </div>
+
+    <div class="event-details">
+        <h2>Detalles Adicionales</h2>
+        <ul>
+            <li><strong>Hora de Inicio:</strong> @Model.Date.ToString("hh:mm tt")</li>
+            <li><strong>Precio de la Entrada:</strong> Gratis</li>
+            <li><strong>Contactos:</strong> +1 809-555-1234, info@elocal.com</li>
+        </ul>
+    </div>
+    <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+        }
+
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+    </style>
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.0976003397536!2d-69.95379483859625!3d18.43387718257062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5630070a804a5%3A0x23d8af6a35d17717!2sUNICARIBE!5e0!3m2!1ses!2sdo!4v1727513310547!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="cta-section">
+        <button class="cta-button" onclick="location.href='@Url.Action("BuyTicket", "Home")'">Reserva tu Entrada</button>
+        <button class="cta-button" onclick="location.href='@Url.Action("ShareEvent", "Home")'">Compartir Evento</button>
+    </div>
+</div>
+<style>
+    .event-details-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .event-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .event-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .event-header p {
+            font-size: 1.2em;
+            color: white;
+        }
+
+    .event-image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .event-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .event-description, .event-details {
+        margin-bottom: 30px;
+    }
+
+        .event-description h2, .event-details h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .event-description p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: white;
+        }
+
+        .event-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .event-details ul li {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+                .event-details ul li strong {
+                    color: rgba(0, 0, 0, 0.4);
+                    ;
+                }
+
+    .cta-section {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .cta-button {
+        background-color: #007bff;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 10px;
+    }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+</style>

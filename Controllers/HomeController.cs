@@ -1,18 +1,22 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ELocal.Models;
+using ELocal.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace ELocal.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IEventService _eventService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IEventService eventService)
     {
         _logger = logger;
+        _eventService = eventService;
     }
-
+    
     public IActionResult Index()
     {
         var events = new List<Event>
@@ -48,5 +52,21 @@ public class HomeController : Controller
     public IActionResult About()
     {
         return View();
+    }
+  
+    public IActionResult Places()
+    {
+        var events = _eventService.GetUpcomingEvents();
+        return View(events);
+    }
+
+    public IActionResult Details(int id)
+    {
+        var eventDetails = _eventService.GetEventById(id);
+        if (eventDetails == null)
+        {
+            return NotFound();
+        }
+        return View(eventDetails);
     }
 }

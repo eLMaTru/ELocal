@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Event>
+@{
+    ViewData["Title"] = "UpcomingDestinations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Próximos Destinos en la República Dominicana</h2>
+
+<div class="gallery-container">
+    @foreach (var evento in Model)
+    {
+    <div class="gallery-item" onclick="location.href='@Url.Action("Details", "Home", new { id = evento.Id })'">
+        <img src="@evento.ImageUrl" alt="@evento.Name" />
+        <div class="gallery-title">@evento.Name</div>
+    </div>
+        }
+</div>
+
+<style>
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 120px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        min-height: 200px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scaleY(1.1);
+    }
+
+    .gallery-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+</style>

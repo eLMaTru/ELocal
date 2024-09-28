@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -21,7 +22,7 @@
         </div>
     </div>
 
-    <button class="cta-button" onclick="location.href='@Url.Action("UpcomingDestinations", "Home")'">Empieza a ver próximos destinos</button>
+    <button class="cta-button" onclick="location.href='@Url.Action("Places", "Home")'">Empieza a ver próximos destinos</button>
 
     <div class="description-section">
         <div class="description-item">
@@ -39,8 +40,6 @@
     .hero-section {
         text-align: center;
         padding: 50px 20px;
-        background: linear-gradient(to right, #007bff, #00aaff);
-        color: white;
     }
 
         .hero-section h1 {

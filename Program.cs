@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using ELocal.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Agrega servicios al contenedor.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IEventService, EventService>(); // Registrar el servicio
+
 
 // Configura el contexto de la base de datos
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
