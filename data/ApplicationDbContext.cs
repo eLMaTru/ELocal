@@ -1,5 +1,7 @@
 // En tu carpeta Data o Models
 using Microsoft.EntityFrameworkCore;
+namespace ELocal.Data
+{
 
 public class ApplicationDbContext : DbContext
 {
@@ -9,4 +11,5 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<Event> Events { get; set; }
+}
 }

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ELocal.Services;
+using ELocal.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

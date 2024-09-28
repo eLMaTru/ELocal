@@ -30,39 +30,8 @@ public class HomeController : Controller
 
 public IActionResult Schedule()
 {
-    var events = new List<Event>
-    {
-        new Event {
-            Name = "UX Design Trend Party 2019", 
-            Description = "In order to save time you have to break down the content strategy...",
-            Date = new DateTime(2019, 1, 17, 9, 30, 0),  // Includes both date and time
-            Location = "Waterfront Hotel, London",
-            ImageUrl = "https://social.webestica.com/assets/images/post/3by2/01.jpg"
-        },
-        new Event {
-            Name = "Rokolo DJ Dancing 2019",
-            Description = "In order to save time you have to break down the content strategy...",
-            Date = new DateTime(2019, 1, 17, 9, 30, 0),  // Includes both date and time
-            Location = "Waterfront Hotel, London",
-            ImageUrl = "https://social.webestica.com/assets/images/events/01.jpg"
-        },
-          new Event {
-            Name = "UX Design Trend Party 2019", 
-            Description = "In order to save time you have to break down the content strategy...",
-            Date = new DateTime(2019, 1, 17, 9, 30, 0),  // Includes both date and time
-            Location = "Waterfront Hotel, London",
-            ImageUrl = "https://social.webestica.com/assets/images/events/02.jpg"
-        },
-        new Event {
-            Name = "Rokolo DJ Dancing 2019",
-            Description = "In order to save time you have to break down the content strategy...",
-            Date = new DateTime(2019, 1, 17, 9, 30, 0),  // Includes both date and time
-            Location = "Waterfront Hotel, London",
-            ImageUrl = "https://social.webestica.com/assets/images/events/06.jpg"
-        }
-    };
-
-    return View(events);
+        var events = _eventService.GetUpcomingEvents();
+        return View(events);
 }
 
     public IActionResult Privacy()

@@ -21,7 +21,7 @@
                         <p class="card-text">
                             <small class="text-muted">@even.Date.ToString("MMMM dd, yyyy")</small>
                         </p>
-                         <button onclick="#">Book Now</button>
+                        <button onclick="location.href='@Url.Action("Details", "Home", new { id = even.Id })'">Book Now</button>
 
                     </div>
                 </div>
