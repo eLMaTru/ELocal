@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Account";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Control de Cuenta</h2>
+
+<div class="account-control-container">
+    <div class="form-group">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" class="form-control" value="NombreUsuario" readonly />
+    </div>
+    <div class="form-group">
+        <label for="current-password">Contraseña Actual:</label>
+        <input type="password" id="current-password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="new-password">Nueva Contraseña:</label>
+        <input type="password" id="new-password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="confirm-password">Confirmar Nueva Contraseña:</label>
+        <input type="password" id="confirm-password" class="form-control" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
+    </div>
+</div>
+
+<p>Check out our exciting schedule for the upcoming event!</p>
+
+<style>
+    .account-control-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 20px auto;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+</style>
