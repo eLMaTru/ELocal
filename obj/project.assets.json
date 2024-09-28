@@ -1186,24 +1186,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/aferreiras/.nuget/packages/": {}
+    "C:\\Users\\arfs9\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aferreiras/development/workspace/universidad/ELocal/ELocal.csproj",
+      "projectUniqueName": "D:\\Sokiwi\\Documents\\Unicaribe\\Diseño y construccion de interfaces\\GitProyect\\ELocal\\ELocal.csproj",
       "projectName": "ELocal",
-      "projectPath": "/Users/aferreiras/development/workspace/universidad/ELocal/ELocal.csproj",
-      "packagesPath": "/Users/aferreiras/.nuget/packages/",
-      "outputPath": "/Users/aferreiras/development/workspace/universidad/ELocal/obj/",
+      "projectPath": "D:\\Sokiwi\\Documents\\Unicaribe\\Diseño y construccion de interfaces\\GitProyect\\ELocal\\ELocal.csproj",
+      "packagesPath": "C:\\Users\\arfs9\\.nuget\\packages\\",
+      "outputPath": "D:\\Sokiwi\\Documents\\Unicaribe\\Diseño y construccion de interfaces\\GitProyect\\ELocal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aferreiras/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\arfs9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1251,7 +1253,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
