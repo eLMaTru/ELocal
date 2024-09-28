@@ -1,8 +1,31 @@
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+@model List<Event>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<h2 class="">Schedule</h2>
-<p>Check out our exciting schedule for the upcoming event!</p>
 
-<!-- Puedes agregar una tabla o cualquier estructura que prefieras para mostrar el calendario de eventos -->
+
+
+
+<div class="container mt-4">
+    @foreach (var even in Model)
+    {
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="@even.ImageUrl" class="img-fluid" alt="Speaker Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@even.Name</h5>
+                        <p class="card-text">@even.Description</p>
+                        <p class="card-text">
+                            <small class="text-muted">@even.Date.ToString("MMMM dd, yyyy")</small>
+                        </p>
+                         <button onclick="#">Book Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

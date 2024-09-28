@@ -5,9 +5,11 @@
   padding: 50px 20px;
 }
 
-body {
-  background-color: #3606bc;
+ body{
+  background-color: #3509b9;
 }
+
+
 
 .hero-section h1 {
   font-size: 2.5em;
@@ -74,4 +76,89 @@ button:hover {
   
 text-align: left;
  width:  900px;
+}
+
+.w3-container{
+  color: rgb(16, 16, 16);
+}
+
+.w3-card-4 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.w3-card-4 img {
+  border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior de la imagen */
+}
+
+.w3-container {
+  padding: 20px; /* Aumento del espacio interior */
+}
+
+.card-title {
+  font-size: 20px; /* Ajuste del tamaño de fuente para el título */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+.card-text {
+  font-size: 16px; /* Ajuste del tamaño de fuente para el texto */
+  color: #555; /* Color de texto más suave */
+}
+
+
+
+
+/* Fondo azul para toda la página Schedule */
+.schedule-page {
+  background-color: #1e90ff; /* Azul claro */
+  padding: 20px;
+  min-height: 100vh; /* Esto asegura que cubra toda la altura de la ventana */
+}
+
+/* Estilos para las tarjetas en Schedule */
+.schedule-page .card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una ligera sombra */
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Landscape card */
+.schedule-page .card .row {
+  flex-direction: row; /* Hacer la tarjeta en formato landscape */
+}
+
+/* Ajuste de imagen dentro de la tarjeta */
+.schedule-page .card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Estilo del contenido de la tarjeta */
+.schedule-page .card .card-body {
+  padding: 20px;
+}
+
+/* Estilo de los títulos dentro de las tarjetas */
+.schedule-page .card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Descripción dentro de la tarjeta */
+.schedule-page .card .card-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+.schedule-body .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al hacer hover */
+  transform: translateY(-2px); /* Elevar ligeramente la tarjeta */
+  transition: all 0.3s ease; /* Animación suave */
 }
