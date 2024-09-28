@@ -6,6 +6,7 @@
 /Users/aferreiras/development/workspace/universidad/ELocal/obj/Debug/net8.0/ELocal.MvcApplicationPartsAssemblyInfo.cache
 /Users/aferreiras/development/workspace/universidad/ELocal/obj/Debug/net8.0/ELocal.RazorAssemblyInfo.cache
 /Users/aferreiras/development/workspace/universidad/ELocal/obj/Debug/net8.0/ELocal.RazorAssemblyInfo.cs
+<<<<<<< HEAD
 /Users/aferreiras/development/workspace/universidad/ELocal/bin/Debug/net8.0/appsettings.Development.json
 /Users/aferreiras/development/workspace/universidad/ELocal/bin/Debug/net8.0/appsettings.json
 /Users/aferreiras/development/workspace/universidad/ELocal/bin/Debug/net8.0/ELocal.staticwebassets.runtime.json
@@ -121,3 +122,6 @@ D:\Sokiwi\Documents\Unicaribe\Diseño y construccion de interfaces\GitProyect\EL
 D:\Sokiwi\Documents\Unicaribe\Diseño y construccion de interfaces\GitProyect\ELocal\obj\Debug\net8.0\ELocal.pdb
 D:\Sokiwi\Documents\Unicaribe\Diseño y construccion de interfaces\GitProyect\ELocal\obj\Debug\net8.0\ELocal.genruntimeconfig.cache
 D:\Sokiwi\Documents\Unicaribe\Diseño y construccion de interfaces\GitProyect\ELocal\obj\Debug\net8.0\ref\ELocal.dll
+=======
+/Users/aferreiras/development/workspace/universidad/ELocal/obj/Debug/net8.0/ELocal.sourcelink.json
+>>>>>>> be231a48a83915d2f1923cf66d3e1273581f17bb
